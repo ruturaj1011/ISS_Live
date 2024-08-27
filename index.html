@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISS live on earth</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
+
+    <style>
+        .map-box { 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #map { 
+            height: 400px;
+            width: 600px;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <h1>Where is the ISS</h1>
+
+    <p>
+        Latitude : <span id="lat"></span> <br>
+        Latitude : <span id="lon"></span>
+    </p>
+
+    <div class="map-box">
+        <div id="map"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
